@@ -5,7 +5,7 @@ import math
 def buildGUI():
     pygame.init()
     win = pygame.display.set_mode((1000, 650))
-    pygame.display.set_caption("Tic-Tac_Toe")
+    pygame.display.set_caption("Tic-Tac-Toe")
     return win
 
 
@@ -143,9 +143,5 @@ def isSpelKlaar(speelveld):
     return 0
 
 
-def startSpel():
-    win = buildGUI()
-    speelSpelGUI(win)
+speelSpelGUI(buildGUI())
 
-
-startSpel()
